@@ -18,7 +18,6 @@ public class Todos {
     public String getAllTasks() {
         StringBuilder str = new StringBuilder();
         for (String t : taskList) {
-            System.out.println(t);
             str.append(t);
             str.append(" ");
         }

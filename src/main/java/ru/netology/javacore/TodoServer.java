@@ -64,8 +64,6 @@ public class TodoServer {
                         String answer = todos.getAllTasks();
                         if (answer.equals("")) {
                             out.println("Список задач пуст!");
-                            out.println(answer);
-                            System.out.println("!!!");
                         } else {
                             out.println(answer);
                         }
