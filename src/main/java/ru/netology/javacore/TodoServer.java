@@ -27,7 +27,6 @@ public class TodoServer {
 
                 System.out.println("Starting server at " + port + "...");
 
-                while (true) {
                     try (
                             Socket socket = serverSocket.accept();
                             BufferedReader in = new BufferedReader
@@ -68,7 +67,7 @@ public class TodoServer {
                             out.println(answer);
                         }
                     }
-                }
+
             } catch (IOException e) {
                 System.out.println("Не могу стартовать сервер");
                 e.printStackTrace();
